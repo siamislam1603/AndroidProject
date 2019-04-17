@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChcekBoxActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_round"
+        android:textColor="#CCCC"
+        android:ems="10"
+        android:hint="Title"
+        android:id="@+id/chkTitleId"/>
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:stretchColumns="0,1">
+        <TableRow
+            android:id="@+id/RowId1"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp">
+            <Button
+                android:textColor="#CCCC"
+                android:text="+ List item"
+                android:id="@+id/buttonEnter"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_round"
+                android:onClick="onClick"/>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
